@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tratamientos | Mala Male</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container-header">
+      <a href="index.html" class="logo">Mala<span>Male</span></a>
+      <nav class="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="tratamientos.html">Tratamientos</a>
+        <a href="productos.html">Productos</a>
+        <a href="https://wa.me/5491123891611">Contacto</a>
+      </nav>
+      <button id="modoOscuroToggle" aria-label="Cambiar tema" class="modo-btn">🌙</button>
+
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <div class="contenedor">
+    <div class="encabezado-tratamientos">
+      <h1>Tratamientos Especializados</h1>
+      <p>Servicios profesionales de peluquería para cuidar y embellecer tu cabello</p>
+    </div>
+
+    <div class="tratamiento-destacado" id="premium">
+      <img src="img/Balayage/Captura de pantalla 2025-10-14 111503.png" alt="Tratamiento Especializado Premium">
+      <div class="info">
+        <h2 >Tratamiento Especializado Premium</h2>
+        <p>Un servicio premium que combina técnicas de estilismo y cuidado capilar profundo para un acabado elegante, saludable y duradero.</p>
+        <button class="btn-cta agregar-carrito" data-nombre="Tratamiento Premium" data-precio="90000">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="lista-tratamientos">
+      <div class="card">
+        <h3>Corte y Peinado</h3>
+        <p>Cortes modernos y clásicos adaptados a tu estilo personal.</p>
+        <ul>
+          <li>Asesoramiento personalizado</li>
+          <li>Técnicas modernas</li>
+          <li>Acabado profesional</li>
+        </ul>
+        <p class="precio">$25000 | 45-60 min</p>
+        <button class="btn-cta agregar-carrito" data-nombre="Corte y Peinado" data-precio="25000">Agregar al carrito</button>
+      </div>
+
+      <div class="card">
+        <h3>Peinado Male</h3>
+        <p>Un peinado exclusivo que combina elegancia y modernidad.</p>
+        <ul>
+          <li>Estilo único y chic</li>
+          <li>Técnica especializada</li>
+          <li>Acabado de lujo</li>
+          <li>Mantenimiento incluido</li>
+        </ul>
+        <p class="precio">$40000 | 90 min</p>
+        <button class="btn-cta agregar-carrito" data-nombre="Peinado Male" data-precio="40000">Agregar al carrito</button>
+      </div>
+
+      <div class="card">
+        <h3>Coloración Profesional</h3>
+        <p>Tintes, mechas y técnicas de coloración de última tendencia.</p>
+        <ul>
+          <li>Productos premium</li>
+          <li>Técnicas avanzadas</li>
+          <li>Colores duraderos</li>
+        </ul>
+        <p class="precio">$60000 | 2-3 hs</p>
+        <button class="btn-cta agregar-carrito" data-nombre="Coloración Profesional" data-precio="60000">Agregar al carrito</button>
+      </div>
+
+      <div class="card" id="hidratacion">
+        <h3>Tratamientos Capilares</h3>
+        <p>Hidratación, nutrición y reparación profunda del cabello.</p>
+        <ul>
+          <li>Hidratación profunda</li>
+          <li>Reparación intensiva</li>
+          <li>Nutrición completa</li>
+        </ul>
+        <p class="precio">$50000 | 60-90 min</p>
+        <button class="btn-cta agregar-carrito" data-nombre="Tratamiento Capilar" data-precio="50000">Agregar al carrito</button>
+      </div>
+
+      <div class="card">
+        <h3>Peinados para Eventos</h3>
+        <p>Diseños elegantes para bodas, graduaciones y ocasiones especiales.</p>
+        <ul>
+          <li>Diseños únicos</li>
+          <li>Duración garantizada</li>
+          <li>Prueba previa incluida</li>
+        </ul>
+        <p class="precio">$60000 | 1-2 hs</p>
+        <button class="btn-cta agregar-carrito" data-nombre="Peinado para Eventos" data-precio="60000">Agregar al carrito</button>
+      </div>
+
+      <div class="card" id="alisado">
+        <h3>Alisado y Reestructuración</h3>
+        <p>Alisados duraderos y tratamientos que reestructuran la fibra capilar.</p>
+        <ul>
+          <li>Resultados naturales</li>
+          <li>Sin daño al cabello</li>
+          <li>Alisado duradero</li>
+        </ul>
+        <p class="precio">$35000 | 3-4 hs</p>
+        <button class="btn-cta agregar-carrito" data-nombre="Alisado y Reestructuración" data-precio="35000">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="proceso">
+      <h2>Nuestro Proceso</h2>
+      <div class="pasos">
+        <div class="paso"><span>1</span><p><strong>Consulta</strong><br>Evaluamos tu cabello y tus objetivos.</p></div>
+        <div class="paso"><span>2</span><p><strong>Planificación</strong><br>Diseñamos el tratamiento ideal.</p></div>
+        <div class="paso"><span>3</span><p><strong>Tratamiento</strong><br>Aplicamos técnicas profesionales.</p></div>
+        <div class="paso"><span>4</span><p><strong>Resultado</strong><br>Tu cabello, hermoso y saludable.</p></div>
+      </div>
+    </div>
+
+    <div class="cta-final">
+      <h2>¿Lista para transformar tu look?</h2>
+      <p>Descubrí la diferencia de un servicio profesional.</p>
+      <button class="btn-cta agregar-carrito" data-nombre="Reserva de cita general" data-precio="0">Reservar Ahora</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Mala Male - Todos los derechos reservados</p>
+    <button id="themeToggle">🌙</button>
+  </footer>
+
+  <!-- === CARRITO === -->
+  <aside id="carrito" class="carrito oculto">
+    <div class="carrito-header">
+      <h2>🛍️ Tu carrito</h2>
+      <button id="cerrarCarrito" class="cerrar-carrito">↩</button>
+    </div>
+    <ul id="lista-carrito"></ul>
+    <div class="carrito-total">
+      <p>Total: $<span id="total">0</span></p>
+      <button id="vaciar-carrito" class="btn ghost">Vaciar</button>
+      <button id="finalizar" class="btn" onclick="">Finalizar por WhatsApp</button>
+    </div>
+  </aside>
+
+  <!-- BOTÓN flotante de carrito -->
+  <button id="botonCarrito" class="boton-carrito">🛒</button>
+
+  <!-- BOTÓN flotante de WhatsApp -->
+  <a href="https://wa.me/5491123891611" class="boton-whatsapp" target="_blank">
+    <img src="img/whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <script src="js/carrito.js"></script>
+  <script src="js/darkmode.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

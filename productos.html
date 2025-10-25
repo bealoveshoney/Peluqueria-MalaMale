@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Peluquería Natasha</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<!-- CARRITO MODERNO -->
+<aside id="carrito" class="carrito oculto">
+  <div class="carrito-header">
+    <h2>🛍️ Tu carrito</h2>
+    <button id="cerrarCarrito" class="cerrar-carrito">↩</button>
+  </div>
+  <ul id="lista-carrito"></ul>
+  <div class="carrito-total">
+    <p>Total: $<span id="total">0</span></p>
+    <button id="vaciar-carrito" class="btn ghost">Vaciar</button>
+    <button id="finalizar" class="btn">Finalizar por WhatsApp</button>
+  </div>
+</aside>
+
+<!-- BOTÓN flotante de carrito -->
+<button id="botonCarrito" class="boton-carrito">🛒</button>
+
+<!-- BOTÓN flotante de WhatsApp -->
+<a href="https://wa.me/5491112345678" class="boton-whatsapp" target="_blank">
+  <img src="img/whatsapp.png" alt="WhatsApp">
+</a>
+
+
+<body>
+   <header class="header">
+    <div class="container-header">
+
+    
+      <a href="index.html" class="logo">Mala<span>Male</span></a>
+
+      
+      <nav class="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="tratamientos.html">Tratamientos</a>
+        <a href="productos.html">Productos</a>
+        <a href="https://wa.me/5491123891611">Contacto</a>
+      </nav>
+
+      <button id="modoOscuroToggle" aria-label="Cambiar tema" class="modo-btn">🌙</button>
+
+     
+    </div>
+  </header>
+
+  <main class="productos-container">
+    <h1>Productos Profesionales</h1>
+    <p class="subtitulo">Lleva a casa el cuidado que tu cabello merece</p>
+
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="img/productos/aceite_kerastase.jpg" alt="Aceite Nutritivo Kérastase">
+        <h3>Aceite Nutritivo Kérastase</h3>
+        <p>Nutre y fortalece el cabello desde la raíz, con efecto brillo.</p>
+        <span class="precio">$32.000</span>
+        <br>
+        <button class="agregar-carrito" data-nombre="Aceite Nutritivo Kérastase" data-precio="32000">Agregar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/productos/kit-reparacion.jpg" alt="Kit Shampoo y Mascarilla Capilar">
+        <h3>Kit Shampoo y Mascarilla Capilar L'oréal</h3>
+        <p>Hidratación y reparación profunda para todo tipo de cabello.</p>
+        <span class="precio">$45.000</span>
+        <br>
+        <button class="agregar-carrito" data-nombre="Kit Shampoo y Mascarilla Capilar" data-precio="45000">Agregar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/productos/combo_cuidado_capilar.jpg" alt="Combo cuidado capilar Kérastase">
+        <h3>Combo cuidado capilar Kérastase</h3>
+        <p>Repara puntas y devuelve brillo natural.</p>
+        <span class="precio">$80.000</span>
+        <br>
+        <button class="agregar-carrito" data-nombre="Combo cuidado capilar Kérastase" data-precio="80000">Agregar</button>
+      </div>
+
+      
+      <div class="producto">
+        <img src="img/productos/protector-termico.jpg" alt="Protector térmico Capilatis">
+        <h3>Protector térmico Capilatis</h3>
+        <p>Cuidado y protección ante uso de plancha o secador</p>
+        <span class="precio">$ 9200</span>
+        <br>
+        <button class="agregar-carrito" data-nombre="Protector térmico Capilatis" data-precio="9200">Agregar</button>
+      </div>
+
+      
+      <div class="producto">
+        <img src="img/productos/tintura-castaño.webp" alt="Tintura Castaño Oscuro L'oréal">
+        <br>
+        <h3>Tintura Castaño Oscuro L'oréal</h3>
+        <p>Tono suave que al aplicar te garantiza un color vibrante.</p>
+        <span class="precio">$ 12.000</span>
+        <br>
+        <button class="agregar-carrito" data-nombre="Tintura Castaño Oscuro L'oréal" data-precio="12000">Agregar</button>
+      </div>
+
+      
+      <div class="producto">
+        <img src="img/productos/mascarilla-rulos2.jpg" alt="Mascarilla para Rulos Curl Expression L'oréal">
+        <h3>Mascarilla para Rulos Curl Expression L'oréal</h3>
+        <p>Reestructura para unos risos bien definidos.</p>
+        <span class="precio">$ 18.000</span>
+        <br>
+        <button class="agregar-carrito" data-nombre="Mascarilla para Rulos Curl Expression L'oréal" data-precio="18000">Agregar</button>
+      </div>
+
+      
+      <div class="producto">
+        <img src="img/productos/shampoo.jpg" alt="Shampoo Elixir Kérastase">
+        <h3>Shampoo Elixir Kérastase</h3>
+        <p>Hidrata, dimensiona y fortalece el cabello</p>
+        <span class="precio">$ 77.000</span>
+        <br>
+        <button class="agregar-carrito" data-nombre="Shampoo Elixir Kérastase" data-precio="77000">Agregar</button>
+      </div>
+
+      
+      <div class="producto">
+        <img src="img/productos/shampoo-renovador.webp" alt="Shampoo renovador Kérastase">
+        <h3>Shampoo renovador Kérastase</h3>
+        <p>Repara puntas y devuelve brillo natural.</p>
+        <span class="precio">$ 67.000</span>
+        <br>
+        <button class="agregar-carrito" data-nombre="Shampoo renovador Kérastase" data-precio="67000">Agregar</button>
+      </div>
+
+      
+      <div class="producto">
+        <img src="img/productos/prolongador.avif" alt="Shampoo prolongador de color L'oréal">
+        <h3>Shampoo prolongador de color L'oréal</h3>
+        <p>Extiende y cuida el color por más tiempo</p>
+        <span class="precio">$ 64.000</span>
+        <br>
+        <button class="agregar-carrito" data-nombre="Shampoo prolongador de color L'oréal" data-precio="64000">Agregar</button>
+      </div>
+
+      
+      <div class="producto">
+        <img src="img/productos/shampoo-vitaminas.png" alt="Shampoo vitaminico L'oréal">
+        <h3>Shampoo vitaminico L'oréal</h3>
+        <p>Renueva la fibra capilar para un cabello más saludable.</p>
+        <span class="precio">$38.000</span>
+        <br>
+        <button class="agregar-carrito" data-nombre="Shampoo vitaminico L'oréal" data-precio="38000">Agregar</button>
+      </div>
+
+      
+      <div class="producto">
+        <img src="img/productos/acondicionador.webp" alt="acondicionador fortificante anticaída Kérastase">
+        <h3>acondicionador fortificante anticaída Kérastase</h3>
+        <p>Tratamiento personalizado anti-caída para todo tipo de cabello debilitado.</p>
+        <span class="precio">$55.000</span>
+        <br>
+        <button class="agregar-carrito" data-nombre="acondicionador fortificante anticaída Kérastase" data-precio="25">Agregar</button>
+      </div>
+
+
+      
+      <div class="producto">
+        <img src="img/productos/combo-lila.webp" alt="Combo blond absolute Kérastase">
+        <h3>Combo Blond Absolute Kérastase</h3>
+        <p>Formula ligera con acidohialurónico para el cabello decolorado o aclarado, suavidad y nutricion todo en combo.</p>
+        <span class="precio">$90.000</span>
+        <br>
+        <button class="agregar-carrito" data-nombre="Combo blond absolute Kérastase" data-precio="90000">Agregar</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- CARRITO 
+  <aside id="carrito" class="carrito">
+    <h2>🛒 Tu carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <div class="carrito-total">
+      <p>Total: $<span id="total">0</span></p>
+      <button id="vaciar-carrito" class="boton-vaciar">Vaciar</button>
+      <button id="finalizar" class="boton-finalizar">Solicitar por WhatsApp</button>
+    </div>
+  </aside>-->
+
+  <a href="https://wa.me/5491112345678" class="whatsapp-btn" target="_blank">💬</a>
+
+  <footer>
+    <p>© 2025 Peluquería Natasha. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/carrito.js"></script>
+  <script src="js/darkmode.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

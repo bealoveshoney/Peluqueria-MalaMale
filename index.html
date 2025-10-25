@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mala Male - Salón</title>
+
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<aside id="carrito" class="carrito oculto">
+  <div class="carrito-header">
+    <h2>🛍️ Tu carrito</h2>
+    <button id="cerrarCarrito" class="cerrar-carrito">↩</button>
+  </div>
+  <ul id="lista-carrito"></ul>
+  <div class="carrito-total">
+    <p>Total: $<span id="total">0</span></p>
+    <button id="vaciar-carrito" class="btn ghost">Vaciar</button>
+    <button id="finalizar" class="btn">Finalizar por WhatsApp</button>
+  </div>
+</aside>
+
+<!-- BOTÓN flotante de carrito -->
+<button id="botonCarrito" class="boton-carrito">🛒</button>
+
+<!-- BOTÓN flotante de WhatsApp -->
+<a href="https://wa.me/5491112345678" class="boton-whatsapp" target="_blank">
+  <img src="img/whatsapp.png" alt="WhatsApp">
+</a>
+
+<body>
+
+
+  
+  <header class="header">
+    <div class="container-header">
+
+    
+      <a href="index.html" class="logo">Mala<span>Male</span></a>
+
+      <!-- Navegación -->
+      <nav class="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="tratamientos.html">Tratamientos</a>
+        <a href="productos.html">Productos</a>
+        <a href="https://wa.me/5491123891611">Contacto</a>
+      </nav>
+
+      
+      <button id="modoOscuroToggle" aria-label="Cambiar tema" class="modo-btn">🌙</button>
+
+    </div>
+  </header>
+
+  <main>  <!-- Carousel de imagenes -->
+  <section class="encabezado-slider">
+  <div class="contenedor-carousel">
+    
+ 
+    <div class="pista-carousel">
+      
+      <div class="item-carousel" style="background-image:url('img/salon.png')">
+        
+        <div class="contenido-slider">
+          <h1>Bienvenida al Salón Mala Male</h1>
+          <p>Estética, corte y color con técnica profesional. Reservá tu turno por WhatsApp.</p>
+          
+          <div class="acciones-slider">
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="item-carousel" style="background-image:url('img/color/nutricion.png')">
+        <div class="contenido-slider">
+          <h1>Cortes y color con estilo natural</h1>
+          <p>Diseños personalizados que realzan tu belleza.</p>
+        </div>
+      </div>
+
+      <div class="item-carousel" style="background-image:url('img/productos/combo-lila.webp')">
+        <div class="contenido-slider">
+          <h1>Productos premium</h1>
+          <p>Trabajamos con marcas profesionales para cuidar tu cabello.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTONES -->
+    <button class="btn-carousel anterior">❮</button>
+    <button class="btn-carousel siguiente">❯</button>
+
+    <!-- INDICADORES -->
+    <div class="indicadores-carousel"></div>
+
+  </div>
+</section>
+
+<div style="text-align: center;">
+   
+  
+</div>
+
+<section class="acerca">
+  <div class="acerca-conten">
+    <img src="img/foto male.jpg" alt="Dueña y estilista principal" class="about-img">
+    <div class="acerca-texto">
+      <h2>Sobre Mala Male</h2>
+      <p>En MalaMale creemos que cada persona es única y merece un estilo que refleje su personalidad. Somos una peluquería unisex con más de 10 años de experiencia, especializada en crear looks modernos y sofisticados.</p>
+      <br>
+      <p>Nuestro equipo de profesionales está constantemente actualizado con las últimas tendencias y técnicas del mundo de la peluquería, garantizando siempre resultados de la más alta calidad.</p>
+      <br>
+      <br>
+      <a href="tratamientos.html" class="btn">Ver tratamientos</a>
+    </div>
+  </div>
+</section>
+
+    <section class="section-tratamientos" id="tratamientos-resumido">
+      <h2>Tratamientos destacados</h2>
+      <p class="lead">Cortes, color, balayage y tratamientos de nutrición.</p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <img src="img/iconos/corte.png" alt="Corte y peinado">
+          <h3>Tratamiento Premium</h3>
+          <p class="price">Nuestro tratamiento exclusivo que combina hidratación profunda, reestructuración y brillo especial.</p>
+          <button  class="btn small" onclick="window.location.href='tratamientos.html#premium'" data-treatment="Corte y peinado"  >Agendar</button>
+        </article>
+
+        <article class="card">
+          <img src="img/iconos/hidratacion.png" alt="Color completo">
+          <h3>Tratamiento Capilar</h3>
+          <p class="price">  <p>Tratamiento intensivo para cabellos secos y dañados. Recupera la suavidad y el brillo natural.</p>          
+          <button class="btn small" data-treatment="Color completo" onclick="window.location.href='tratamientos.html#hidratacion'">Agendar</button>
+        </article>
+
+        <article class="card">
+          <img src="img/iconos/cambio-color.png" alt="alisado">
+          <h3>Alisado Natural</h3>
+          <p class="price">Alisado y nutrición con keratina natural. Cabello sedoso y manejable por meses.</p>
+          <button class="btn small" data-treatment="alisado" onclick="window.location.href='tratamientos.html#alisado'">Agendar</button>
+        </article>
+      </div>
+    </section>
+
+
+<section class="galeria-bento">
+  <div class="bento-grid">
+    
+    <!-- BLOQUE PRINCIPAL CON VIDEO -->
+    <div class="bento-item grande">
+      <video autoplay muted loop playsinline src="img/video-natasha.mp4"></video>
+    </div>
+
+   
+    <div class="bento-item azul">
+      <img src="img/color/mecha.de.color.png" alt="Coloración profesional">
+      <p>Coloración profesional</p>
+    </div>
+
+    <div class="bento-item rosa">
+      <img src="img/Balayage/Captura de pantalla 2025-10-14 111647.png" alt="Corte y peinado">
+      <p>Corte y peinado</p>
+    </div>
+
+    <div class="bento-item verde">
+      <img src="img/Alisados/nutricion.png" alt="Hidratación profunda">
+      <p>Hidratación profunda</p>
+    </div>
+
+    <div class="bento-item gris" style="background-color: rgba(0, 0, 0, 0.603); color: white; padding: 5px;">
+      <h3>Tratamientos premium</h3>
+      <p>Solo con productos profesionales</p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Testimonios -->
+    <section class="testimonios">
+      <br>
+      <br>
+      <h2>Comentarios destacados</h2>
+      <div class="testi-track" id="testiTrack">
+        <blockquote class="testimonio">
+          <p>“Me encantó el resultado, el color quedó super natural y duró mucho tiempo.”</p>
+          <footer>— Ana P.</footer>
+        </blockquote>
+
+        <blockquote class="testimonio">
+          <p>“Ambiente súper acogedor y Male supo entender exactamente lo que quería.”</p>
+          <footer>— Laura M.</footer>
+        </blockquote>
+
+        <blockquote class="testimonio">
+          <p>“Recomiendo 100% por la técnica y por los productos que usan.”</p>
+          <footer>— Sofía R.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+<section id="contacto" class="contactos">
+  <h2>Encontranos</h2>
+
+  <div class="info-contacto">
+    <p>📍 <strong>Alem 880, Monte Grande</strong></p>
+    <p>🕒 Lun–Sáb: 9:00 – 20:00 | Dom: 10:00 – 18:00</p>
+  
+  </div>
+
+  <div class="mapa-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5850904987684!2d-58.46007422450308!3d-34.59038125717514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca93d5c97953%3A0xe27f7b8cbb46f6c!2sAlem%20880%2C%20Monte%20Grande%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1697891234567!5m2!1ses!2sar"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+    <br>
+    <br>
+    <a href="https://www.google.com/maps/place/Alem+880,+Monte+Grande,+Buenos+Aires" 
+       target="_blank" 
+       class="btn-mapa">
+       Ver en Google Maps
+    </a>
+</section>
+
+
+ <a href="https://wa.me/5491123891611" class="boton-whatsapp" aria-label="Contacto WhatsApp">
+    <img src="img/whatsapp.png" alt="WhatsApp" />
+  </a>
+
+  <footer class="footer">
+    <div class="footer-section">
+  <a href="#"><img src="" alt=""></a>
+  
+                    
+               
+  <p>&copy; 2025 Mala Male - Todos los derechos reservados</p>
+  
+  <button id="themeToggle">🌙</button>
+</footer>
+
+  </main>
+
+  <script src="js/carrito.js"></script>
+  <script src="js/script.js"></script>
+<script src="js/darkmode.js"></script>
+
+</body>
+</html>
